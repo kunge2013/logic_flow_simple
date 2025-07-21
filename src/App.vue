@@ -10,6 +10,7 @@
       <router-link to="/basic">基础流程图</router-link> |
       <router-link to="/custom-node">自定义节点</router-link> |
       <router-link to="/custom-edge">自定义连线</router-link>
+      <router-link to="/simple">简单流程图</router-link>
     </nav>
   </header>
 

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HelloWorld from '../components/HelloWorld.vue'
 import LogicFlow from '../components/LogicFlow.vue'
-
+import LogicFlowSimple from '../components/LogicFlowSimple.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -24,6 +24,11 @@ const router = createRouter({
       path: '/custom-edge',
       name: 'custom-edge',
       component: () => import('../components/CustomEdge.vue')
+    },
+    {
+      path: '/simple',
+      name: 'simple',
+      component: LogicFlowSimple
     }
   ]
 })
