@@ -1,15 +1,14 @@
 <template>
-   <LogicFlowSimple/>
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/logic-flow">Logic Flow</router-link>
+  </nav>
+  <router-view/>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import LogicFlowSimple from './components/LogicFlowSimple.vue'
 export default {
-  name: 'App',
-  components: {
-    LogicFlowSimple
-  }
+  name: 'App'
 }
 </script>
 
@@ -21,5 +20,19 @@ export default {
   text-align: center;
   color: #2d4c6b;
   margin-top: 60px;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
